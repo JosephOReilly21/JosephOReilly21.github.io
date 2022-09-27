@@ -30,12 +30,12 @@ h1, h3, p{
 
 /* Set the apperance of the class, chart */
 .chart{
-    background-color: orange;
+    background-color: rgb(0, 255, 191);
     width: 430px;
     border-width: 10px;
     border-style: solid;
     border-radius: 5px;
-    border-color: purple;
+    border-color: rgb(195, 0, 255);
 
     
 }
