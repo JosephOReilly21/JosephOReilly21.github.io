@@ -13,6 +13,29 @@ body{
  
 }
 
+a{
+    border: 5px;
+    border-color: black;
+    border-style: solid;
+
+    margin:20px
+}
+
+
+#link1{
+    border-color:pink;
+    border-style:dashed
+}
+
+#link2{
+    border:2px;
+    border-color:black;
+    border-style: solid;
+
+    border-radius: 5px;
+
+}
+
 
 /* Choose the appearance of the tags, h1, h3 and p: */
 h1, h3, p{
@@ -33,6 +56,17 @@ h1, h3, p{
     border-color: rgb(100, 100, 100);
 }
 
+.myWeek2{
+    margin: auto;
+    max-width: 600px;
+    background-color: rgb(220, 220, 220);
+
+      
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(100, 100, 100);
+}
 
 /* Set the apperance of the class, chart */
 .chart{
