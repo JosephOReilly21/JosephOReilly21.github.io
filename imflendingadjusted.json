@@ -2,7 +2,7 @@
 
   "title": {
       "text": "IMF lending outstanding as a % of World Real GDP ",
-      "subtitle":"Credit outstanding to all member, % of World Real GDP, Source: IMF",
+      "subtitle":"Credit outstanding to all member, % of World Real GDP (SDRs), Source: IMF",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
       "anchor": "start",
