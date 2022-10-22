@@ -9,7 +9,7 @@
 
 /* Set the background color for my page: rgb is red green blue and oges up to 255, or just type a randon colour */
 body{
-    background-color: rgb(200, 200, 200);
+    background-color: rgb(183, 231, 227);
  
 }
 
@@ -61,14 +61,94 @@ h1, h3, p{
 }
 /* Set the apperance of the class, chart */
 .chart{
-    background-color: white;
-    width:450px;
+    background-color: rgb(255, 255, 255);
+    width: 380px;
     border-width: 2px;
     border-style: solid;
     border-radius: 10px;
     border-color: grey;
+    text-align: center;
+    display: block; 
+    margin: 0 auto;
     
 }
-    
+
+#Chart1{
+    background-color: rgb(255, 255, 255);
+    width: 380px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: grey;
+    text-align: center;
+    display: block; 
+    margin: 0 auto;
+
+}
+
+#Chart2{
+    background-color: rgb(255, 255, 255);
+    width: 380px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: grey;
+    text-align: center;
+    display: block; 
+    margin: 0 auto;
+
+}
+
+#Chart3{
+    background-color: rgb(255, 255, 255);
+    width: 380px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: grey;
+    text-align: center;
+    display: block; 
+    margin: 0 auto;
+
+}
+
+#Chart4{
+    background-color: rgb(255, 255, 255);
+    width: 380px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: grey;
+    text-align: center;
+    display: block; 
+    margin: 0 auto;
+
+}
+
+#Chart5{
+    background-color: rgb(255, 255, 255);
+    width: 380px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: grey;
+    text-align: center;
+    display: block; 
+    margin: 0 auto;
+
+}
+
+#Chart6{
+    background-color: rgb(255, 255, 255);
+    width: 380px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: grey;
+    text-align: center;
+    display: block; 
+    margin: 0 auto;
+
+}
 
 /* Set the apperance for a particular chart use the hastag symbol with the specific div to link it */

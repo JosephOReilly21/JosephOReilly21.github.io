@@ -52,11 +52,16 @@
 
     <div class="myWeek3">
         <h1> Portfolio Task Week 3.</h1>
-            <p>Week 2 task : Using Google Colab to input data manually into a chart</p>
+            <p>Week 3 task : Creating a chart that has data defined inline, in the Vega specification</p>
         
-        <h3>London Claimant Count</h3>
-        <p>This chart shows the development of the Claimant Count in London over time</p>
+        <h3>England Claimant Count</h3>
+        <p>This stacked bar chart shows the development of the Claimant Count in England over time, the data has been separated by gender</p>
         <div class="chart" id="Chart5"></div>
+
+        <h3>England Claimant Count Alternate Visualisation</h3>
+        <p>This line chart shows the same data as the above chart</p>
+        <p>I have chosen to use a line chart to show a clearer development over time. I have also included a series for the combined total.</p>
+        <div class="chart" id="Chart6"></div>
     </div>
 </body>
 
@@ -66,7 +71,8 @@
     var myChart2 = "exr_usdgbp_slider.json";
     var myChart3 = "imflending.json";
     var myChart4 = "imflendingadjusted.json";
-    var myChart5 = "claimantcount.json"
+    var myChart5 = "claimantcountbad.json";
+    var myChart6 = "claimantcountredo.json";
 // the homework is to change these file names
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
@@ -74,6 +80,7 @@
     vegaEmbed('#Chart3', myChart3)
     vegaEmbed('#Chart4', myChart4)
     vegaEmbed('#Chart5', myChart5)
+    vegaEmbed('#Chart6', myChart6)
 </script>
 
 </html>
