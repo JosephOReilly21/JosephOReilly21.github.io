@@ -59,6 +59,19 @@ h1, h3, p{
     border-color: rgb(100, 100, 100);
 
 }
+
+.myWeek4{    
+    margin: auto;
+    max-width: 600px;
+    background-color: rgb(220, 220, 220);
+
+      
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(100, 100, 100);
+
+}
 /* Set the apperance of the class, chart */
 .chart{
     background-color: rgb(255, 255, 255);
@@ -150,5 +163,45 @@ h1, h3, p{
     margin: 0 auto;
 
 }
+
+#Chart7{
+    background-color: rgb(255, 255, 255);
+    width: 380px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: grey;
+    text-align: center;
+    display: block; 
+    margin: 0 auto;
+
+}
+
+#linkscraper{
+    border:1px;
+    border-color:rgb(61, 61, 209);
+    border-style: solid;
+
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight:700;
+    color:black;
+    text-decoration: none;
+
+    
+}
+#linkscraper{ display: block;text-align: center;}
+
+#linkscraper:hover{
+
+    background-color: rgba(30, 197, 223, 0.148);
+
+    border:2px;
+    border-color:black;
+    border-style: solid;
+    
+}
+
 
 /* Set the apperance for a particular chart use the hastag symbol with the specific div to link it */

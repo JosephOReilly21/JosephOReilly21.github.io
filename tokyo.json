@@ -1,0 +1,35 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Bar chart with text labels. Set domain to make the frame cover the labels.",
+      "title": {
+      "text": "Gold Medal Success at Tokyo 2020 Olympics",
+      "subtitle": "Gold Medals by Country, Source: BBC Sport",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "black"
+      },
+  
+    
+    "data": {
+      "values": [{"Rank": 1, "Country": "United States", "Gold": 39}, {"Rank": 2, "Country": "China", "Gold": 38}, {"Rank": 3, "Country": "Japan", "Gold": 27}, {"Rank": 4, "Country": "Great Britain", "Gold": 22}, {"Rank": 5, "Country": "ROC", "Gold": 20}, {"Rank": 6, "Country": "Australia", "Gold": 17}, {"Rank": 7, "Country": "Netherlands", "Gold": 10}, {"Rank": 8, "Country": "France", "Gold": 10}, {"Rank": 9, "Country": "Germany", "Gold": 10}, {"Rank": 10, "Country": "Italy", "Gold": 10}]
+    },
+    "encoding": {
+      "y": {"field": "Country", "type": "nominal", "sort": "quantitative", "axis": {"grid": false, "ticks": false}, "title": null},
+      "x": {"field": "Gold", "type": "quantitative", "title": "Gold Medals","axis": { "grid": false, "ticks": false},"scale": {"domain": [0, 50]}}, "color": {"value": "#e5c100"}
+    },
+    "layer": [{
+      "mark": "bar"
+    }, {
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "middle",
+        "dx": 10,
+        "fill": "black"
+      },
+      "encoding": {
+        "text": {"field": "Gold", "type": "quantitative"}
+      }
+    }]
+  }
