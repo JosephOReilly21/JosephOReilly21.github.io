@@ -9,18 +9,23 @@
 
 /* Set the background color for my page: rgb is red green blue and oges up to 255, or just type a randon colour */
 body{
-    background-color: rgba(95, 174, 239, 0.435);
+    background-color: #F0EAD6;
 }
 
-h1, a, p{
-    color:rgb(0, 0, 0);
-    font-family: 'Roboto', sans-serif;
+.heading{
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    align-content: center;
+    max-width: 910px;
+    background-color:	#FFD580;
+    border-width: 3px;
+    border-radius: 3px;
+    border-style: double;
+    border-color: rgb(24, 54, 66);
     text-align: center;
-    border: 1px;
-    border-radius: 5px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: gray;
+    text-decoration: underline;
+
     
     
 }
@@ -36,7 +41,7 @@ a{
 
 .topnav{
     overflow: hidden;
-    background-color: rgb(121, 196, 233);
+    background-color:  #F0EAD6;
     border-radius: 15px;
     border-style: solid;
     border-color: black;
@@ -47,11 +52,11 @@ a{
 }
 .topnav{
     float: none;
-    color: aqua;
+    color:  #F0EAD6;
     text-align: center;
     padding: 10px 12px;
     font-size: 15px;
-    width: auto;
+    width: 800px;
 
 
 }
@@ -65,7 +70,7 @@ a{
     padding: 10px;
     font-family: 'Courier New', Courier, monospace;
     font-weight:700;
-    color:white;
+    color:black;
     text-decoration: none;
 
     
@@ -74,7 +79,7 @@ a{
 
 #link1:hover{
 
-    background-color: rgba(30, 197, 223, 0.148);
+    background-color: #FFD580;
 
     border:2px;
     border-color:black;
@@ -91,7 +96,7 @@ a{
     padding: 10px;
     font-family: 'Courier New', Courier, monospace;
     font-weight:700;
-    color:white;
+    color:black;
     
     text-decoration: none;
 
@@ -101,7 +106,7 @@ a{
 
 #link2:hover{
 
-    background-color: rgba(30, 197, 223, 0.148);
+    background-color:#FFD580;
 
     border:2px;
     border-color:black;
@@ -118,7 +123,7 @@ a{
     padding: 10px;
     font-family: 'Courier New', Courier, monospace;
     font-weight:700;
-    color:white;
+    color:black;
     
     text-decoration: none;
 
@@ -128,7 +133,7 @@ a{
 
 #link3:hover{
 
-    background-color: rgba(30, 197, 223, 0.148);
+    background-color: #FFD580;
 
     border:2px;
     border-color:black;
@@ -145,7 +150,7 @@ a{
     padding: 10px;
     font-family: 'Courier New', Courier, monospace;
     font-weight:700;
-    color:white;
+    color:black;
     
     text-decoration: none;
 
@@ -155,7 +160,7 @@ a{
 
 #link4:hover{
 
-    background-color: rgba(30, 197, 223, 0.148);
+    background-color: #FFD580;
 
     border:2px;
     border-color:black;
