@@ -1,3 +1,4 @@
+
 /* Richard Davies, Data Science for Economists */
 
 /* This is my second proper css file */
@@ -25,9 +26,9 @@ h1, h3, p{
     
 .myWeek1{
     margin: auto;
-    max-width: 600px;
+    max-width: 800px;
     background-color: rgb(220, 220, 220);
-
+    padding: 5px;
       
     border-width: 3px;
     border-style: solid;
@@ -37,7 +38,7 @@ h1, h3, p{
 
 .myWeek2{
     margin: auto;
-    max-width: 600px;
+    max-width: 800px;
     background-color: rgb(220, 220, 220);
 
       
@@ -49,7 +50,7 @@ h1, h3, p{
 
 .myWeek3{    
     margin: auto;
-    max-width: 600px;
+    max-width: 800px;
     background-color: rgb(220, 220, 220);
 
       
@@ -62,9 +63,9 @@ h1, h3, p{
 
 .myWeek4{    
     margin: auto;
-    max-width: 600px;
+    max-width: 800px;
     background-color: rgb(220, 220, 220);
-
+    display: block;
       
     border-width: 3px;
     border-style: solid;
@@ -72,6 +73,20 @@ h1, h3, p{
     border-color: rgb(100, 100, 100);
 
 }
+
+.myWeek5{    
+    margin: auto;
+    max-width: 950px;
+    background-color: rgb(220, 220, 220);
+    display: block;
+      
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(100, 100, 100);
+
+}
+
 /* Set the apperance of the class, chart */
 .chart{
     background-color: rgb(255, 255, 255);
@@ -79,7 +94,7 @@ h1, h3, p{
     border-width: 2px;
     border-style: solid;
     border-radius: 10px;
-    border-color: grey;
+    border-color: black;
     text-align: center;
     display: block; 
     margin: 0 auto;
@@ -203,5 +218,15 @@ h1, h3, p{
     
 }
 
+.chartw5{
+    align-items: center;
+    background-color: white;
+    width:250px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #313d5a;
+    margin-left: 30px;
+    margin-bottom: 30px;
 
-/* Set the apperance for a particular chart use the hastag symbol with the specific div to link it */
+}
