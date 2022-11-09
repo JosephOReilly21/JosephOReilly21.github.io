@@ -10,7 +10,7 @@
 
 /* Set the background color for my page: rgb is red green blue and oges up to 255, or just type a randon colour */
 body{
-    background-color: rgb(183, 231, 227);
+    background-color: #F0EAD6;
  
 }
 
@@ -23,23 +23,40 @@ h1, h3, p{
     font-family: 'Roboto', sans-serif;
     text-align: center;
 }
+
+.subtitle{
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    align-content: center;
+    max-width: 910px;
+    background-color:	#FFD580;
+    border-width: 3px;
+    border-radius: 3px;
+    border-style: double;
+    border-color: rgb(24, 54, 66);
+    text-align: center;
+    text-decoration: underline;
+}
     
 .myWeek1{
     margin: auto;
-    max-width: 800px;
+    max-width: 910px;
     background-color: rgb(220, 220, 220);
     padding: 5px;
-      
+    margin-bottom: 20px;
     border-width: 3px;
     border-style: solid;
     border-radius: 10px;
     border-color: rgb(100, 100, 100);
+    
 }
 
 .myWeek2{
     margin: auto;
-    max-width: 800px;
+    max-width: 910px;
     background-color: rgb(220, 220, 220);
+    margin-bottom: 20px;
 
       
     border-width: 3px;
@@ -50,8 +67,9 @@ h1, h3, p{
 
 .myWeek3{    
     margin: auto;
-    max-width: 800px;
+    max-width: 910px;
     background-color: rgb(220, 220, 220);
+    margin-bottom: 20px;
 
       
     border-width: 3px;
@@ -63,9 +81,10 @@ h1, h3, p{
 
 .myWeek4{    
     margin: auto;
-    max-width: 800px;
+    max-width: 910px;
     background-color: rgb(220, 220, 220);
     display: block;
+    margin-bottom: 20px;
       
     border-width: 3px;
     border-style: solid;
@@ -76,9 +95,10 @@ h1, h3, p{
 
 .myWeek5{    
     margin: auto;
-    max-width: 950px;
+    max-width: 910px;
     background-color: rgb(220, 220, 220);
     display: block;
+    margin-bottom: 20px;
       
     border-width: 3px;
     border-style: solid;
@@ -109,8 +129,11 @@ h1, h3, p{
     border-radius: 10px;
     border-color: grey;
     text-align: center;
-    display: block; 
+    display: flex; 
     margin: 0 auto;
+    align-items:flex-end;
+    border-bottom: 30px;
+    margin-bottom: 30px;
 
 }
 
@@ -122,8 +145,9 @@ h1, h3, p{
     border-radius: 10px;
     border-color: grey;
     text-align: center;
-    display: block; 
+    display: flex; 
     margin: 0 auto;
+    align-items: flex-start;
 
 }
 
@@ -194,7 +218,7 @@ h1, h3, p{
 
 #linkscraper{
     border:1px;
-    border-color:rgb(61, 61, 209);
+    border-color:black;
     border-style: solid;
 
     border-radius: 5px;
@@ -229,4 +253,31 @@ h1, h3, p{
     margin-left: 30px;
     margin-bottom: 30px;
 
+}
+
+#linkonsapi{
+    border:1px;
+    border-color:black;
+    border-style: solid;
+    border-bottom: 30px;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight:700;
+    color:black;
+    text-decoration: none;
+
+    
+}
+
+#linkonsapi{ display: block;text-align: center;}
+
+#linkonsapi:hover{
+
+    background-color: rgba(30, 197, 223, 0.148);
+
+    border:2px;
+    border-color:black;
+    border-style: solid;
+    
 }
