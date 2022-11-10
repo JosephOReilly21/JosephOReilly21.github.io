@@ -142,6 +142,30 @@
     
 
     </div>
+
+        <!---------------------------------------------------Week7------------------------------------------------------>
+     <div class="subtitle">
+         <h2>Week 7</h2>
+     </div>
+
+     <div class="myWeek7">
+        <h1>Two maps, a base map and a choropleth</h1>
+        <p>Two maps of Scotland</p>
+
+
+        <div class="chartw7" id="Chart17"></div>
+
+        <p>This first base map presents Scotland, segmented into its Local Authority Areas</p>
+
+        <h3>2nd Map</h3>
+        <div class = "chartw7" id="Chart18"></div>
+        <p>This choropleth map shows the total Crime and Offenses in Scotland by Local Authority Area. It also shows Motor Vehicle and Misc Crime in the tooltip.</p>
+
+     </div>
+     
+
+
+
 </body>
 
 <script>
@@ -162,6 +186,8 @@
     var myChart14 = "W5CCUKWOMEN1824.json"
     var myChart15 = "W5CCUKMEN50.json";
     var myChart16 = "W5CCUKWOMEN50.json";
+    var myChart17 = "scotlandmap.json";
+    var myChart18 ="scotlandcrimemap.json";
 // the homework is to change these file names
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
@@ -180,6 +206,8 @@
     vegaEmbed('#Chart14', myChart14)
     vegaEmbed('#Chart15', myChart15)
     vegaEmbed('#Chart16', myChart16)
+    vegaEmbed('#Chart17', myChart17)
+    vegaEmbed('#Chart18', myChart18)
 </script>
 
 </html>

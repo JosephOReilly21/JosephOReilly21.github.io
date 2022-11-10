@@ -1,0 +1,66 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "width" : 500,
+    "height": 500,
+
+    "title": {
+        "text": "Crime and Offenses in Scotland 2020-21",
+        "subtitle": ["Crimes and Offenses recorded, Source: Scottish Government"],
+        "subtitleFontStyle": "italic",
+        "subtitleFontSize": 10,
+        "anchor": "start",
+        "color": "#010001",
+        "subtitleColor": "#000000"},
+  
+    "data":{
+      "url": "https://raw.githubusercontent.com/JosephOReilly21/JosephOReilly21.github.io/main/geoscotland.json",
+      "format":{
+       
+        "property":"features"}},
+
+        "projection": {
+          "type":"mercator"
+        },
+
+    "transform": [
+      {
+        "lookup": "properties.LAD13NM",
+  
+        "from":{
+          "data":{
+            "url": "https://raw.githubusercontent.com/JosephOReilly21/JosephOReilly21.github.io/main/scotlandcrime.csv"},
+            "key": "Local Authority Area",
+            "fields": ["Miscellaneous Offence", "Motor Vehicle Offenses", "Total Crimes and Offenses"]
+          }
+        }
+      
+    ],
+       
+      "mark":{
+        "type": "geoshape",
+              "stroke":"black",
+      "strokeWidth": 0.5
+      
+    
+ 
+
+      },
+
+      "encoding": {
+              "color":{ 
+        "field":"Total Crimes and Offenses",
+         "type": "quantitative"}, 
+       
+       
+        "tooltip":[{
+          "field":"properties.LAD13NM", "type": "nominal",  
+           "title":"Local Authority District"},    
+      {"field":"Motor Vehicle Offenses", "title":"Motor Vehicle Crimes"},
+      {"field":"Miscellaneous Offence", "title":"Misc Offenses"},
+      {"field":"Total Crimes and Offenses", "title":"Total Crimes"}]
+
+        
+      }
+      
+      }

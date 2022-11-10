@@ -107,6 +107,20 @@ h1, h3, p{
 
 }
 
+.myWeek7{
+    margin: auto;
+    max-width: 910px;
+    background-color: rgb(220, 220, 220);
+    display: block;
+    margin-bottom: 20px;
+      
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(100, 100, 100);
+
+}
+
 /* Set the apperance of the class, chart */
 .chart{
     background-color: rgb(255, 255, 255);
@@ -216,6 +230,8 @@ h1, h3, p{
 
 }
 
+
+
 #linkscraper{
     border:1px;
     border-color:black;
@@ -280,4 +296,34 @@ h1, h3, p{
     border-color:black;
     border-style: solid;
     
+}
+
+
+
+#Chart17{
+    background-color: rgb(255, 255, 255);
+    width: 550px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: grey;
+    text-align: center;
+    display: block; 
+    margin: 0 auto;
+    
+
+}
+
+#Chart18{
+    background-color: rgb(255, 255, 255);
+    width: 800px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: grey;
+    text-align: center;
+    display: block; 
+    margin: 0 auto;
+    
+
 }

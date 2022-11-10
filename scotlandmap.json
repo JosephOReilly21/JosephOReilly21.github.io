@@ -1,0 +1,48 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "width" : 500,
+    "height": 500,
+
+    "title":{
+      "text":"Scotland",
+      "subtitle": ["Scotland by Local Authority Area"],
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "#010001",
+      "subtitleColor": "#000000"
+
+    },
+  
+    "data":{
+      "url": "https://raw.githubusercontent.com/JosephOReilly21/JosephOReilly21.github.io/main/geoscotland.json",
+      "format":{
+       
+        "property":"features"}},
+
+        "projection": {
+          "type":"mercator"
+        },
+
+       
+      "mark":{
+        "type": "geoshape",
+              "stroke":"black",
+      "strokeWidth": 0.5,
+      "fill":"lightblue"
+
+      },
+
+      "encoding": {
+        "tooltip":[{
+          "field":"properties.LAD13NM", "type": "nominal", "title":"Local Authority District"
+
+
+
+        }
+
+        ]
+      }
+      
+      }
