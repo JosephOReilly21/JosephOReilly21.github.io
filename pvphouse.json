@@ -1,0 +1,52 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "House prices creeping up in the background",
+      "subtitle": "UK House Price Index included, Source: HM Land Registry",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "black"
+    },
+  
+    
+  
+      "height": 300,
+    "width": 400,
+  
+    "data": {
+      "url": "https://raw.githubusercontent.com/JosephOReilly21/JosephOReilly21.github.io/main/pvphousedata.csv"
+    },
+  
+    "layer": [
+      {
+        "mark": { "type": "bar", "opacity":0.25, "color": "gray"},
+        "encoding": {
+          "x": {"field": "Date", "type": "temporal", "axis":{"grid": false}},
+          "y": {"field": "House Price Index", "type": "quantitative", "axis": { "grid": false, "title" : "YoY % Change"}},
+       "tooltip":[ {"field": "House Price Index", "type": "quantitative", "title": "House Price Index Change"} ]
+          
+          
+        }
+      },
+      {
+        "mark": { "type": "line", "opacity":0.9, "color":"blue"},
+        "encoding": {
+          "x":{"field": "Date", "type": "temporal"},
+          "y": {"field": "Private", "type": "quantitative"},
+          "tooltip":[ {"field": "Private", "type": "quantitative", "title": "Private Sector Wage Growth"} ]
+        }
+      },
+          {
+        "mark": { "type": "line", "opacity": 0.9, "color": "red"},
+        "encoding": {
+          "x":{"field": "Date", "type": "temporal"},
+          "y": {"field": "Public ", "type": "quantitative"},
+          "tooltip": [ { "field": "Public ", "type": "quantitative", "title": "Public Sector Wage Growth"}]
+        }
+  
+        
+      }
+  
+    ]
+  }

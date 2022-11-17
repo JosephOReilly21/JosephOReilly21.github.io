@@ -18,7 +18,15 @@ body{
 
 
 /* Choose the appearance of the tags, h1, h3 and p: */
-h1, h3, p{
+h1{   
+    color:rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+h3, p{
     color:rgb(0, 0, 0);
     font-family: 'Roboto', sans-serif;
     text-align: center;
@@ -119,6 +127,22 @@ h1, h3, p{
     border-radius: 10px;
     border-color: rgb(100, 100, 100);
 
+}
+
+.myWeek8{
+
+     margin: auto;
+     max-width: 910px;
+    background-color: rgb(220, 220, 220);
+    display: block;
+     margin-bottom: 20px;
+          
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(100, 100, 100);
+    
+    
 }
 
 /* Set the apperance of the class, chart */
@@ -317,6 +341,34 @@ h1, h3, p{
 #Chart18{
     background-color: rgb(255, 255, 255);
     width: 800px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: grey;
+    text-align: center;
+    display: block; 
+    margin: 0 auto;
+    
+
+}
+
+#Chart19{
+    background-color: rgb(255, 255, 255);
+    width: 450px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: grey;
+    text-align: center;
+    display: block; 
+    margin: 0 auto;
+    
+
+}
+
+#Chart20{
+    background-color: rgb(255, 255, 255);
+    width: 450px;
     border-width: 2px;
     border-style: solid;
     border-radius: 10px;
