@@ -1,0 +1,60 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+      "title": {
+        "text": "Unemployment Vs Crime by State",
+        "subtitle":["Scatter of Crime Rate per 100,000 people vs Unemployment Rate (x), size represents State Population"],
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":10,
+        "anchor": "start",
+        "color": "black"
+      },
+  
+      "height":350,
+      "width":350,
+  
+    "config": {
+      "background":"white",
+      "view": {
+        "stroke": "transparent"}},
+    
+      "data": {
+        "url": "https://raw.githubusercontent.com/JosephOReilly21/JosephOReilly21.github.io/main/USmasterdata.csv",
+        "format":{"type":"csv"}},
+  
+        "layer": [{
+           "mark":{
+            "type": "circle",
+            "color":"blueviolet",
+            "opacity":0.7},
+  
+            "encoding": {
+              "x":{"field":"Unemployment Rate Oct 2022", "type": "quantitative", "title":"Unemployment Rate"},
+              "y":{"field":"Crime Rate 2020", "type": "quantitative", "title":"Crime Rate"},
+              "size":{"field":"Population 2022", "type": "quantitative", "legend":null},
+                    "tooltip":[
+          {"field":"State", "type": "ordinal", "title":"State"},
+          {"field":"Crime Rate 2020", "type": "quantitative", "title":"Crime Rate", "format":".0f"},
+          {"field":"Unemployment Rate Oct 2022", "type": "quantitative", "title":"Unemployment Rate", "format":".2f"},
+          {"field":"Population 2022", "type": "quantitative", "title":"Population", "format":","}
+  
+        ]
+            }
+            },
+  
+            {"mark":{"type": "line", "color":"red"},
+  
+            "transform": [{"regression": "Crime Rate 2020", "on": "Unemployment Rate Oct 2022"}],
+                  "encoding": {
+          "x": {"field": "Unemployment Rate Oct 2022", "type": "quantitative"},
+          "y": {"field": "Crime Rate 2020", "type": "quantitative"}
+        }
+          
+          
+          
+  
+          }
+        ]
+  
+  
+  }
