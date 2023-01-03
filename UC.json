@@ -1,0 +1,109 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "description": "",
+
+  "title": {
+    "text": "Universal Credit and Employment",
+    "subtitle": ["Source : DWP, ONS", "Select by region using legend, Scroll in for more detail", "Line of best fit included"],
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"},
+
+  "data": {
+    "url": "https://raw.githubusercontent.com/JosephOReilly21/JosephOReilly21.github.io/main/project/UCchart.csv"
+  },
+
+
+
+  "height":350,
+  "width":350,
+
+    "layer": [
+  {
+
+        "selection": {
+    "selector": {"type": "multi", "on": "mouseover", "nearest": true},
+    "grid": {"type": "interval", "bind": "scales"},
+    "regionSelect": {"type": "multi", "fields": ["Region"], "bind": "legend"}
+  },
+
+  "mark": "circle",
+
+  "encoding": {
+    "x": {
+      "field": "Ratio percentage",
+      "type": "quantitative",
+      "title":"% of  Universal Credit Claimants Employed",
+      "scale": {"domain": [25, 80]}
+    },
+
+    "y": {
+      "field": "Total",
+      "type": "quantitative",
+      "title":"Total Crime Rate per 1000"
+    },
+
+    "color": {
+      "field": "Region", 
+      "type": "ordinal", 
+      "title":null, 
+      "scale": {"scheme": "spectral"}
+    },
+
+    "opacity": {
+      "condition": {"selection": "regionSelect", "value": 0.9}, "value": 0.04
+      },
+
+    "size": {
+      "condition": {"selection": "selector", "value": 200}},
+      
+
+    "tooltip": [
+      {"field": "Region", "type": "nominal", "title": "Region"},
+      {"field": "Local Authority June 2022 Crime rates per 1000", "type": "ordinal", "title": "LAD"},
+      {"field": "Ratio percentage", "type": "quantitative", "title": "Ratio of Employed on UC", "format": ","},
+      {"field": "Total", "type": "quantitative", "title": "Crime Rate per 1000"},
+      {"field": "Total Claimants", "type": "quantitative", "title": "Universal Credit Claimants"}         
+    ]
+  }
+  },
+  {
+          "mark": {"type": "line", "color": "red"},
+    "transform": [
+      {
+        "regression": "Total",
+        "on": "Ratio percentage"
+      }
+    ],
+    "encoding": {
+      "x": {
+        "field": "Ratio percentage",
+        "type": "quantitative"
+      },
+      "y": {"field": "Total", "type": "quantitative"}
+      
+    }
+  },
+  {
+    "transform": [
+      {
+        "regression": "Total",
+        "on": "Ratio percentage",
+        "params": true
+      },
+      {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
+    ],
+    "mark": {
+      "type": "text",
+      "color": "red",
+      "x": "width",
+      "align": "left",
+      "y":-4
+    },
+    "encoding": {"text": {"type": "ordinal", "field": "R2"}}
+  }
+  
+  ]
+}
