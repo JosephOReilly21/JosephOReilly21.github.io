@@ -8,20 +8,172 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Title for the page -->
-    <title>Document</title>
+    <title>Data Science Project</title>
 
     <!-- Link to my style sheet -->
-    <link rel="stylesheet" href="index3.css">
+    <link rel="stylesheet" href="project.css">
 
     <!--The next three lines allow the Vega embed-->
     <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 </head>
 
 <body>
-    <h1>My Project.</h1>
-    <p> Description of my project</p>
+
+    <!--Title and buttons-->
+    <div class="pagetitle2">
+
+        <h1><span style="color:orange">Data</span><span style="color:white">Science</span></h1>
+    </div>
+
+    <div class="containerproject">
+    <a href="project.html" id="link1">Project</a>  
+    <a href="portfolio3.html" id="link2">Portfolio</a>
+    <a href="https://rapidcharts.io/datascience" id="link3">Course Homepage</a>
+    <a href="https://github.com/JosephOReilly21/JosephOReilly21.github.io" id="link4">Github</a>
+    </div>
+        
+
+
+    <!--Main body of project-->
+    <p class ="heading">The Economics of Crime</p>
+
+    <p class="discussion">Project Aims</p>
+        
+    <p>The seminal work of Gary Becker in 1968 introduced the world to the Economics of Crime.
+        Becker's theory of crime modelled an economically rational criminal. One who is deterred through harsher sanctions and better legal alternatives in society.</p>
+
+    <p>My project will attempt to visualise Becker's predictions on crime at the aggregate level.
+        Using US and UK data, I will explore an array of economic measures which characterise better legal alternatives to crime.
+        I will also explore legislative change to the US penal system, which characterises the gain to criminal activity.</p>
+
+    <p>I acknowledge inferring causality from correlations is often clouded by issues of reverse causility and other omitted variables.</p>
+
+    <p class="subheading1">Background</p>
+
+        <div class="container">
+            <div class="chart" id="chart25"></div>
+            </div>
+
+    <p>Data for this map has been taken from an extensive csv from the FBI Summary Reporting System found <a href="https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/downloads">here</a>
+        
+         </p>
+
+    <div class="container">
+    <div class="chart" id="chart26"></div>
+        </div>
+
+    <p>I created a state-selectable time-series breakdown of the same data. Overall, the US has seen a decline in crime over the last 40 years. However, when examining states individually, 
+        the same pattern doesn't emerge in all states. Cross-state heterogeneity in a variety of economic and legislative conditions warrants further discussion as presented below.
+         
+    </p>
+
+    <p class="subheading2">Discussion</p>
+
+        <div class="container">
+        <div class="chart" id="chart27"></div>
+        </div>
+
+    <p>Reducing the gain from crime reduces criminal activity. Prison produces a deterrent effect on criminals. I have attempted to visualise a deterrent effect in action. In 1994, California introduced the Three-Strikes Law. Its implementation introduced a life sentence for an array of violent crimes upon the third strike. Taking its implementation as an 
+        event study, a deterrent effect is seen in California with violent crime falling. I chose to concatenate neighbouring states of Nevada and Arizona into the Vega specification, an interesting unintended
+        side-effect discussed by <a href="https://www.nber.org/papers/w13784">Iyengar (2008)</a> presents. After Three-Strikes, violent crime in neighbouring states increased, implying that criminals may have mitgrated away from California to commit crimes.
+    </p>
+
+    <div class="container">
+        <div class="chart" id="chart28"></div>
+    </div>
+
+    <p>
+        As expected, Poverty Rate is positively correlated with Crime Rate, albeit an R-squared of 0.24 is quite weak. Using 2021 data, poverty data is defined by and taken from the <a href="https://www.census.gov/library/publications/2022/demo/p60-277.html">U.S Census Bureau</a>  and is adjusted each year with CPI.
+        In line with theory, the gain from crime for those in poverty may outweigh the legal alternatives presented in society. 
+        
+    </p>
+
+    <div class="container">
+        <div class="chart" id="chart29"></div>
+    </div>
+    
+    <p>As explored above using US data, poverty is positively correlated with crime. Focusing on the lowest earners in society, I decided to use UK data to investigate how employment affects crime. Utilising the DWP's data tool 
+        <a href="https://stat-xplore.dwp.gov.uk/webapi/jsf/login.xhtml">Stat-Xplore</a> I found data on Universal Credit Claimants in England segmented by employment status whilst claiming and by Local Authority. I downloaded data in excel and manually calculated the 
+        ratio of employed claimants per Local Authority. In line with theory, the correlation shows a negative relationship. Employment reduces crime through the mechanisms of supplementary income on top of welfare (increasing legal alternatives to crime)
+        whilst also incapacitating people from committing crime through time constraints of employment.
+    </p>
+
+    <div class="container">
+        <div class="chart" id="chart30"></div>
+    </div>
+
+    <p>I have concatenated similar sized Bristol and Liverpool together for comparison. Both cities' criminal activity is dominated by violent crime, however in other categories they differ. 
+        The second chart compares the cities by economic indicator of choice. Bristol performs better across all indicators which can be interpreted as reflecting in the overall lower number of crimes. 
+     
+    </p>
+
+    <div class="container">
+        <div class="chart" id="chart31"></div>
+    </div>
+
+    
+
+    <p class="subheading3">Data Analysis</p>
+
+    <p>For my first 3 on the US, I used the aforementioned data from the FBI. To create the Map and Line Chart, I pivoted the data from Long format, in order to fold the data correctly in Vega to allow for State and Year selection.
+    Link to Python notebook below. When visualising Three-Strikes, I layered a mark of a straight line inside the concatenation. This straight line required me to create a fake simple dataset to match the year 1994.
+    </p>
+
+    <div class="containerlink">
+        <a href="https://colab.research.google.com/drive/1XvqpnMcHoT1xpfdE18pX316JdzY411n9" id="linkpivot">Python Notebook</a>
+        </div>
+
+    <p>US Crime rate and Poverty Rate data by State was downloaded from the <a href="https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/home">FBI</a>  and US Census Bureau. Layering a regression over required the extent function in Vega to extend the regression line manually.</p>
+
+    <p>After signing up to the DWP's Stat-Xplore, data was easy to download into excel and convert to csv. The ONS Community Safety Partnership Areas dataset provided crime rate data by geography, and in the vast majority matched Local Authorities with only a small number of omissions.</p>
+
+    <p>The <a href="https://data.police.uk/docs/">UK Police API</a>  provided a catalogue of crime by area. Searching for cities required the longitude and latitude and had to be searched manually. One challenge for replicatability will be that as the police API updates to recent crimes within a months timeframe, my data on economic metrics will have to manually updated.</p>
+
+    <p class="heading">Conclusion</p>
+    <p>To conclude, my visualisations have presented support for Becker's theory on crime at the aggregate level. I acknowledge that exploring the drivers of crime rigourously, requires careful econometric design. There are many alternate variables which can drive criminal activity.
+         Many drivers lie outside the field of economics entirely, requiring further invesitgation. </p>
+
+    <footer></footer>
+
+
+    
+        
+</body>
+
+<script>
+    //Define charts:
+    var myChart25 = "totalcrimemap.json";
+    var myChart26 = "totalcrimeline.json";
+    var myChart27 = "threestrikes.json";
+    var myChart28 = "poverty.json";
+    var myChart29 = "UC.json";
+    var myChart30 = "bristolliverpool.json";
+    var myChart31 = "bristolliverpoolmetrics.json";
+
+
+// Embed charts
+    vegaEmbed('#chart25', myChart25);
+    vegaEmbed('#chart26', myChart26);
+    vegaEmbed('#chart27', myChart27)
+    vegaEmbed('#chart28', myChart28)
+    vegaEmbed('#chart29', myChart29)
+    vegaEmbed('#chart30', myChart30)
+    vegaEmbed('#chart31', myChart31)
+
+
+</script>
+
+
+
+
+            
+        
+
 </body>
 
 <html>

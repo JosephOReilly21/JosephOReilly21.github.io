@@ -1,0 +1,262 @@
+
+
+body {
+    background-size: 200% 200%;
+    background-color: #212121;
+}
+
+.footer {
+    height: 150px;
+}
+/* style for title and buttons*/
+.pagetitle2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3%;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a{
+    text-decoration-color: white;
+    color: white;
+}
+
+.containerproject {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#link1{
+    width:150px;
+    height:35px;
+    border:none;
+    color: white;
+    background-color:#212121;
+    border-radius: 10px;
+    transition: ease-out 0.1s;
+    box-shadow: inset 0 0 0 0 #c1c1a4;
+    outline: none;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#link1:hover{
+    box-shadow: inset 150px 0 0 0 orange;
+    cursor: pointer;
+}
+
+#link2{
+    width:150px;
+    height:35px;
+    border:none;
+    color: white;
+    background-color:#212121;
+    border-radius: 10px;
+    transition: ease-out 0.1s;
+    box-shadow: inset 0 0 0 0 #c1c1a4;
+    outline: none;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#link2:hover{
+    box-shadow: inset 150px 0 0 0 orange;
+    cursor: pointer;
+}
+
+#link3{
+    width:150px;
+    height:35px;
+    border:none;
+    color: white;
+    background-color:#212121;
+    border-radius: 10px;
+    transition: ease-out 0.1s;
+    box-shadow: inset 0 0 0 0 #c1c1a4;
+    outline: none;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#link3:hover{
+    box-shadow: inset 150px 0 0 0 orange;
+    cursor: pointer;
+}
+
+#link4{
+    width:150px;
+    height:35px;
+    border:none;
+    color: white;
+    background-color:#212121;
+    border-radius: 10px;
+    transition: ease-out 0.1s;
+    box-shadow: inset 0 0 0 0 #c1c1a4;
+    outline: none;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#link4:hover{
+    box-shadow: inset 150px 0 0 0 orange;
+    cursor: pointer;
+}
+
+
+/* style for main body, text and headings*/
+.heading {
+    font-family: 'Open Sans', sans-serif;
+    color: orange;
+    font-size: 18px; 
+    line-height: 1; 
+    text-align: center;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.subheading1 {
+    font-family: 'Open Sans', sans-serif;
+    color: orange;
+    font-size: 18px; 
+    line-height: 1; 
+    text-align: center;
+    font-weight: 500;
+
+}
+
+.subheading2 {
+    font-family: 'Open Sans', sans-serif;
+    color: orange;
+    font-size: 18px; 
+    line-height: 1; 
+    text-align: center;
+    font-weight: 500;
+
+}
+
+.subheading3 {
+    font-family: 'Open Sans', sans-serif;
+    color: orange;
+    font-size: 18px; 
+    line-height: 1; 
+    text-align: center;
+    font-weight: 500;
+
+}
+
+
+.discussion {
+    font-family: 'Open Sans', sans-serif;
+    color: orange;
+    font-size: 18px; 
+    line-height: 1; 
+    text-align: center;
+    font-weight: 500;
+}
+
+p {
+    font-weight: 300;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px;
+    width: 700px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: min(90vw, 815px);
+}
+/* style for charts*/
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: left;
+}
+
+.chart{
+    width: 560px;
+    height: 400px;
+    margin: 18px;
+    padding: 5px;
+    background-color: White;
+    border: orange solid 5px;
+    border-radius: 10px;
+    font-family: Inter,sans-serif;
+    font-size: 10pxp;
+}
+
+#chart26 {
+    margin: auto 0 auto 0;
+    height: 500px;
+}
+
+#chart27 {
+    height: 840px;
+    width: 355px;
+}
+
+#chart28 {
+    width: 500px;
+}
+
+#chart29 {
+    height: 480px;
+    width: 580px;
+}
+
+#chart30 {
+    width: 830px;
+}
+
+#chart31 {
+    width: 390px;
+    height: 450px;
+}
+/* style for subsequent links and buttons in the main body*/
+.p {
+    font-weight: 300;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px;
+    width: 700px;
+    text-align: left;
+    margin: 0 auto;
+    max-width: min(90vw, 815px);
+}
+
+.containerlink {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#linkpivot{
+    width:150px;
+    height:35px;
+    border:none;
+    color: white;
+    background-color:#212121;
+    border-radius: 10px;
+    transition: ease-out 0.1s;
+    box-shadow: inset 0 0 0 0 #c1c1a4;
+    outline: none;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#linkpivot:hover{
+    box-shadow: inset 150px 0 0 0 orange;
+    cursor: pointer;
+}

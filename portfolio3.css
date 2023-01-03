@@ -1,0 +1,345 @@
+body {
+    background-size: 200% 200%;
+    background-color: #212121;
+}
+/* style for title and buttons*/
+.pagetitle3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3%;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.containerportfolio {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#link1{
+    width:150px;
+    height:35px;
+    border:none;
+    color: white;
+    background-color:#212121;
+    border-radius: 10px;
+    transition: ease-out 0.1s;
+    box-shadow: inset 0 0 0 0 #c1c1a4;
+    outline: none;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#link1:hover{
+    box-shadow: inset 150px 0 0 0 orange;
+    cursor: pointer;
+}
+
+#link2{
+    width:150px;
+    height:35px;
+    border:none;
+    color: white;
+    background-color:#212121;
+    border-radius: 10px;
+    transition: ease-out 0.1s;
+    box-shadow: inset 0 0 0 0 #c1c1a4;
+    outline: none;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#link2:hover{
+    box-shadow: inset 150px 0 0 0 orange;
+    cursor: pointer;
+}
+
+#link3{
+    width:150px;
+    height:35px;
+    border:none;
+    color: white;
+    background-color:#212121;
+    border-radius: 10px;
+    transition: ease-out 0.1s;
+    box-shadow: inset 0 0 0 0 #c1c1a4;
+    outline: none;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#link3:hover{
+    box-shadow: inset 150px 0 0 0 orange;
+    cursor: pointer;
+}
+
+#link4{
+    width:150px;
+    height:35px;
+    border:none;
+    color: white;
+    background-color:#212121;
+    border-radius: 10px;
+    transition: ease-out 0.1s;
+    box-shadow: inset 0 0 0 0 #c1c1a4;
+    outline: none;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#link4:hover{
+    box-shadow: inset 150px 0 0 0 orange;
+    cursor: pointer;
+}
+/* style for main body, text and subheadings*/
+.heading {
+    font-family: 'Open Sans', sans-serif;
+    color: orange;
+    font-size: 18px; 
+    line-height: 1; 
+    text-align: center;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.weektitle {
+    font-family: 'Open Sans', sans-serif;
+    color: orange;
+    font-size: 18px; 
+    line-height: 1; 
+    text-align: center;
+    font-weight: 500;
+}
+
+p {
+    font-weight: 300;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px;
+    width: 700px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: min(90vw, 815px);
+}
+
+.taskdescription {
+    font-family: 'Open Sans', sans-serif;
+    color: orange;
+    font-size: 15px; 
+    line-height: 1; 
+    text-align: center;
+    font-weight: 500;
+    text-decoration: underline;
+}
+/* style for charts and buttons to linked notebooks in body*/
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: left;
+}
+
+
+.chart{
+    width: 400px;
+    height: 400px;
+    margin: 15px;
+    padding: 5px;
+    background-color: white;
+    border: #908e8e solid 5px;
+    border-radius: 10px;
+    font-family: Inter,sans-serif;
+    font-size: 10pxp;
+}
+
+#chart1 {
+    margin: auto 0 auto 0;
+    height: 450px;
+}
+
+#chart2 {
+    margin: auto 0 auto 0;
+    height: 450px;
+    width: 380px;
+}
+
+#chart5 {
+    margin: auto 0 auto 0;
+    height: 320px;
+    width: 360px;
+}
+
+#chart6 {
+    margin: auto 0 auto 0;
+    height: 320px;
+    width: 360px;
+}
+
+#chart7 {
+    margin: auto 0 auto 0;
+    height: 320px;
+    width: 360px;
+}
+
+.containerbutton1 {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#linkscraper{
+    width:150px;
+    height:35px;
+    border:none;
+    color: white;
+    background-color:#212121;
+    border-radius: 10px;
+    transition: ease-out 0.1s;
+    box-shadow: inset 0 0 0 0 #c1c1a4;
+    outline: none;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#linkscraper:hover{
+    box-shadow: inset 150px 0 0 0 orange;
+    cursor: pointer;
+}
+
+#chart8 {
+    margin: auto 0 auto 0;
+    height: 260px;
+    width: 240px;
+    border-width: 2px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+}
+
+#chart9 {
+    margin: auto 0 auto 0;
+    height: 260px;
+    width: 240px;
+    border-width: 2px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+}
+
+#chart10 {
+    margin: auto 0 auto 0;
+    height: 260px;
+    width: 240px;
+    border-width: 2px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+}
+
+#chart11 {
+    margin: auto 0 auto 0;
+    height: 260px;
+    width: 240px;
+    border-width: 2px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+}
+
+#chart12 {
+    margin: auto 0 auto 0;
+    height: 260px;
+    width: 240px;
+    border-width: 2px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+}
+
+#chart13 {
+    margin: auto 0 auto 0;
+    height: 260px;
+    width: 240px;
+    border-width: 2px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+}
+
+#chart14 {
+    margin: auto 0 auto 0;
+    height: 260px;
+    width: 240px;
+    border-width: 2px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+}
+
+#chart15 {
+    margin: auto 0 auto 0;
+    height: 260px;
+    width: 240px;
+    border-width: 2px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+}
+
+#chart16 {
+    margin: auto 0 auto 0;
+    height: 260px;
+    width: 240px;
+    border-width: 2px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+}
+
+#chart17 {
+    margin: auto 0 auto 0;
+    height: 580px;
+    width: 560px;
+}
+
+#chart18 {
+    margin: auto 0 auto 0;
+    height: 600px;
+    width: 690px;
+}
+
+#chart19 {
+    margin: auto 0 auto 0;
+    height: 400px;
+    width: 490px;
+}
+
+#chart20 {
+    margin: auto 0 auto 0;
+    height: 400px;
+    width: 490px;
+}
+
+#chart21 {
+    margin: auto 0 auto 0;
+    height: 460px;
+    width: 520px;
+}
+
+#chart22 {
+    margin: auto 0 auto 0;
+    height: 460px;
+    width: 520px;
+}
+
+#chart23 {
+    margin: auto 0 auto 0;
+    height: 460px;
+    width: 520px;
+}
+
+
+
