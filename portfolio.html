@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title for the page -->
+    <title>Portfolio</title>
+
+    <!-- Link to my style sheet -->
+    <link rel="stylesheet" href="portfolio.css">
+
+    <!--The next three lines allow the Vega embed-->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+
+<body>
+
+    <div class="pagetitle3">
+
+        <h1><span style="color:orange">Data</span><span style="color:white">Science</span></h1>
+    </div>
+
+    <div class="containerportfolio">
+    <a href="project.html" id="link1">Project</a>  
+    <a href="portfolio3.html" id="link2">Portfolio</a>
+    <a href="https://rapidcharts.io/datascience" id="link3">Course Homepage</a>
+    <a href="https://github.com/JosephOReilly21/JosephOReilly21.github.io" id="link4">Github</a>
+    <a href="index.html" id="link5">Homepage</a>
+    </div>
+
+    <p class ="heading">Portfolio</p>
+
+    <p class ="weektitle">Week 1</p>
+
+    <p class ="taskdescription">Task 1: Setting up website, and embedding two charts.</p>
+
+    <div class="container">
+        <div class="chart" id="chart1"></div>
+        </div>
+
+    <p>My first chart tracks CPI Inflation in the UK</p>
+
+    <div class="container">
+        <div class="chart" id="chart2"></div>
+        </div>
+
+    <p>My second chart tracks the USD to GBP exchange rate</p>
+
+    <p class ="weektitle">Week 2</p>
+
+    <p class ="taskdescription">Task 2: Two charts: Replicating one from the Financial Times, and your first original.</p>
+
+    <div class="container">
+        <div class="chart" id="chart3"></div>
+        </div>
+
+    <p>The first chart examines IMF lending from 1984 to 2022 and replicates one found in the FT.</p>
+    
+    <div class="container">
+        <div class="chart" id="chart4"></div>
+        </div>
+
+    <p>The second chart adjusts upon the previous examining IMF lending as a % of World Real GDP from 1984 to 2022.</p>  
+    
+    <p>Comment: Upon transforming the data, it appears the most 'risky' year would be 1985. Outstanding credit in 1985 peaked at 0.38% of World GDP.</p>
+    
+    <p class ="weektitle">Week 3</p>
+
+    <p class ="taskdescription">Task 3: Two charts: Inline data objects and visual encodings.</p>
+
+    <div class="container">
+        <div class="chart" id="chart5"></div>
+        </div>
+
+    <p>This stacked bar chart shows the development of the Claimant Count in England over time, the data has been separated by gender</p>    
+
+    <div class="container">
+        <div class="chart" id="chart6"></div>
+        </div>
+
+    <p>This line chart shows the same data as the above chart.</p>   
+    
+    <p>Comment: I have chosen to use a line chart to show a clearer development over time. I have also included a series for the combined total.</p>
+
+    <p class ="weektitle">Week 4</p>
+
+    <p class ="taskdescription">Task 4: One chart: Implement a data scraper of your own. Any source, any data.</p>
+
+    <div class="container">
+        <div class="chart" id="chart7"></div>
+        </div>
+
+    <p> Comment: The data used has been scraped from the BBC Sport website.The data was presented in a table on the website.</p> 
+    
+    <p>Find below a link to the Colab Notebook used for scraping the data</p>
+
+    <div class="containerbutton1">
+    <a href="https://colab.research.google.com/drive/1OpLTfYao_UfCiovX5hSTF_XP1J2_OpIg#scrollTo=zrX6lSkKblnw" id="linkscraper">Google Colab Python Scraper</a>
+    </div>
+
+    <p class ="weektitle">Week 5</p>
+
+    <p class ="taskdescription">Task 5: Nine Charts: build a dashboard.</p>
+
+    <div class="container">
+        <div class="chart" id="chart8"></div>
+        <div class="chart" id="chart9"></div>
+        <div class="chart" id="chart10"></div>
+
+        </div>
+
+    <div class="container">
+        <div class="chart" id="chart11"></div>
+        <div class="chart" id="chart12"></div>
+        <div class="chart" id="chart13"></div>
+    </div>
+
+    <div class="container">
+        <div class="chart" id="chart14"></div>
+        <div class="chart" id="chart15"></div>
+        <div class="chart" id="chart16"></div>
+    </div>
+
+    <p>This Dashboard presents time series data on the Claimant Count for different demographics across the UK and England.</p>
+    <p>The data has been taken from the ONS API, a loop in python was used to batch download the data. A link to the python notbook can be found below.</p>
+
+    <div class="containerbutton1">
+        <a href="https://colab.research.google.com/drive/1kBXnsys1zhlzAZYII7Zom2F3jAeI5X4l" id="linkscraper">Google Colab API batch download</a>
+        </div>
+
+    <p class ="weektitle">Week 6</p>
+
+    <p class ="taskdescription">Reading Week</p>
+
+    <p class ="weektitle">Week 7</p>
+
+    <p class ="taskdescription">Task 7: Two maps: a base map and a choropleth.</p>
+
+    <div class="container">
+        <div class="chart" id="chart17"></div>
+        </div>
+
+    <p>This first base map presents Scotland, segmented into its Local Authority Areas.</p>
+
+    <div class="container">
+        <div class="chart" id="chart18"></div>
+        </div>
+
+    <p>This choropleth map shows the total Crime and Offenses in Scotland by Local Authority Area. It also shows Motor Vehicle and Misc Crime in the tooltip.</p>
+
+    <p class ="weektitle">Week 8</p>
+
+    <p class ="taskdescription">Task 8: Festival of Economics.</p>
+
+    <div class="container">
+        <div class="chart" id="chart19"></div>
+        </div>
+
+    <p>To keep up with rising inflation, wages have to rise to match. However in the UK private sector wages have grown faster than the public sector.</p>
+
+    <div class="container">
+        <div class="chart" id="chart20"></div>
+        </div>
+
+    <p>Compounding on rising inflation, House prices since mid-2020 have risen faster than both sets of wages. This is worrying for hopeful home owners.</p>
+
+    <p class ="weektitle">Week 9</p>
+
+    <p class ="taskdescription">Task 9: Advanced Analytics</p>
+
+    <div class="container">
+        <div class="chart" id="chart21"></div>
+        </div>
+
+    <p>This Scatter chart shows a simple plot of crime rate against unemployment rate by state. A regression has been layered over.</p>
+
+    <div class="container">
+        <div class="chart" id="chart22"></div>
+        </div>
+
+    <p>This second scatter shows crime rate against mediam household income by state. A regression has been layered as well as an R-squared value, albeit very weak.</p>
+
+    <p class ="weektitle">Week 10</p>
+
+    <p class ="taskdescription">Task 10: Machine Learning.</p>
+
+    <p>Supervised and Unsupervised Learning</p>
+
+
+    <div class="container">
+    <img src="mlregressiontennis.png" alt="Ranking on Winners"/>
+    </div>
+
+    <p>Supervised Learning: I wanted to test a relationship between ATP Ranking and number of Winners hit by the Top 100 Male Tennis Players. Using Linear Regression from sklearn I was able to fit the data and find
+        a negative relationship between ATP Ranking and numbers of winners hit for the 2022 Season.
+    </p>
+
+    <div class="container">
+        <div class="chart" id="chart23"></div>
+        </div>
+
+    <p>Unsupervised Learning: I wanted to use Dimensionality Reduction through Principal Component Analysis to try an determine ATP Ranking in 2022. I used a key set of tennis playing metrics to determine, these metrics can be seen in the tooltip of this graph.
+        
+    </p>
+
+    <p>The outcome is that most of the top 10, 20 and 30 are well grouped together. Click the legend to indentify each ranking band.</p>
+
+    <p>Find a link to the Python Notebook where I conducted the analysis below</p>
+
+    <div class="containerbutton1">
+        <a href="https://colab.research.google.com/drive/1SuJ_5iAFUuRE5oXL5wNFOrjdJ8CnE4qR#scrollTo=kOxX5iDx0Joc" id="linkscraper">Python Machine Learning Notebook</a>
+        </div>
+
+
+</body>
+
+<script>
+    //Define charts:
+    var myChart1 = "chartINF1.json";
+    var myChart2 = "exr_usdgbp_slider.json";
+    var myChart3 = "imflending.json";
+    var myChart4 = "imflendingadjusted.json";
+    var myChart5 = "claimantcountbad.json";
+    var myChart6 = "claimantcountredo.json";
+    var myChart7 = "tokyo.json";
+    var myChart8 = "W5CCUKPEOPLE.json";
+    var myChart9 = "W5CCUKMEN.json";
+    var myChart10 = "W5CCUKWOMEN.json";
+    var myChart11 = "W5CCENGMEN.json";
+    var myChart12 = "W5CCENGWOMEN.json";
+    var myChart13 = "W5CCUKMEN1824.json";
+    var myChart14 = "W5CCUKWOMEN1824.json"
+    var myChart15 = "W5CCUKMEN50.json";
+    var myChart16 = "W5CCUKWOMEN50.json";
+    var myChart17 = "scotlandmap.json";
+    var myChart18 ="scotlandcrimemap.json";
+    var myChart19 = "pvp.json";
+    var myChart20 = "pvphouse.json";
+    var myChart21 = "unemploymentcrime.json";
+    var myChart22 = "incomevscrime.json";
+    var myChart23 ="Tennis.json";
+
+// the homework is to change these file names
+    // Embed charts:
+    vegaEmbed('#chart1', myChart1);
+    vegaEmbed('#chart2', myChart2);
+    vegaEmbed('#chart3', myChart3);
+    vegaEmbed('#chart4', myChart4)
+    vegaEmbed('#chart5', myChart5)
+    vegaEmbed('#chart6', myChart6)
+    vegaEmbed('#chart7', myChart7)
+    vegaEmbed('#chart8', myChart8)
+    vegaEmbed('#chart9', myChart9)
+    vegaEmbed('#chart10', myChart10)
+    vegaEmbed('#chart11', myChart11)
+    vegaEmbed('#chart12', myChart12)
+    vegaEmbed('#chart13', myChart13)
+    vegaEmbed('#chart14', myChart14)
+    vegaEmbed('#chart15', myChart15)
+    vegaEmbed('#chart16', myChart16)
+    vegaEmbed('#chart17', myChart17)
+    vegaEmbed('#chart18', myChart18)
+    vegaEmbed('#chart19', myChart19)
+    vegaEmbed('#chart20', myChart20)
+    vegaEmbed('#chart21', myChart21)
+    vegaEmbed('#chart22', myChart22)
+    vegaEmbed('#chart23', myChart23)
+
+</script>
+
+
+
