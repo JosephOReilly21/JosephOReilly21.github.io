@@ -19,7 +19,7 @@
         "title": {
           "text":"Bristol",
           "fontSize":12,
-          "subtitle":["Population:467,099"],
+          "subtitle":["Population:467,099", "Total Recent Crimes: 1518"],
           "subtitleFontSize": 10
           },
 
@@ -70,7 +70,7 @@
                   "title": {
           "text":"Liverpool",
           "fontSize":12,
-          "subtitle":["Population:496,784"],
+          "subtitle":["Population:496,784", "Total Recent Crimes: 1719"],
           "subtitleFontSize": 10
           },
 

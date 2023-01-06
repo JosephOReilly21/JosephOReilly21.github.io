@@ -42,18 +42,18 @@
     <!--Main body of project-->
     <p class ="discussion">Joseph O'Reilly | Student Number: 1910238</p>
     
-    <p class ="discussion">Word Count: 780</p>
+    <p class ="discussion">Word Count: 795</p>
 
     <p class ="heading">The Economics of Crime</p>
 
     <p class="discussion">Project Aims</p>
         
-    <p>The seminal work of Gary Becker in 1968 introduced the world to the Economics of Crime.
-        Becker's theory of crime modelled an economically rational criminal. This criminal is deterred through harsher sanctions and better legal alternatives in society.</p>
+    <p>The seminal work of <a href="https://www.jstor.org/stable/1830482">Gary Becker</a> in 1968 introduced the world to the Economics of Crime.
+        Becker's theory of crime modelled an economically rational criminal. A criminal deterred through harsher sanctions and better legal alternatives in society.</p>
 
     <p>My project will attempt to visualise Becker's predictions on crime at the aggregate level.
-        Using US and UK data, I will explore an array of economic measures which characterise better legal alternatives to crime.
-        I will also explore legislative change to the US penal system, which characterises the gain to criminal activity.</p>
+        Using US and UK data, I explore an array of economic measures which characterise better legal alternatives to crime.
+        I also explore legislative change to the US penal system, which characterises the gain to criminal activity.</p>
 
     <p>I acknowledge inferring causality from correlations is often clouded by issues of reverse causility and other omitted variables.</p>
 
@@ -92,7 +92,7 @@
     </div>
 
     <p>
-        As expected, Poverty Rate is positively correlated with Crime Rate, albeit an R-squared of 0.24 is quite weak. Using 2021 data, poverty data is defined by and taken from the <a href="https://www.census.gov/library/publications/2022/demo/p60-277.html">U.S Census Bureau</a>  and is adjusted each year with CPI.
+        As expected, Poverty Rate is positively correlated with <a href="https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/home">Crime Rate</a> , albeit an R-squared of 0.24 is quite weak. Using 2021 data, poverty data is defined by and taken from the <a href="https://www.census.gov/library/publications/2022/demo/p60-277.html">U.S Census Bureau</a>  and is adjusted each year with CPI.
         In line with theory, the gain from crime for those in poverty may outweigh the legal alternatives presented in society. 
         
     </p>
@@ -134,13 +134,15 @@
 
     <p>US Crime rate and Poverty Rate data by State was downloaded from the <a href="https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/home">FBI</a>  and US Census Bureau. Layering a regression over required the extent function in Vega to extend the regression line manually.</p>
 
-    <p>After signing up to the DWP's Stat-Xplore, data was easy to download into excel and convert to csv. The ONS Community Safety Partnership Areas dataset provided crime rate data by geography, and in the vast majority matched Local Authorities with only a small number of omissions.</p>
+    <p>After signing up to the DWP's Stat-Xplore, data was easy to download into excel and convert to csv. The <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/datasets/recordedcrimedatabycommunitysafetypartnershiparea">ONS Community Safety Partnership Areas dataset</a>  provided crime rate data by geography, and in the vast majority matched Local Authorities with only a small number of omissions.</p>
 
-    <p>The <a href="https://data.police.uk/docs/">UK Police API</a>  provided a catalogue of crime by area. Searching for cities required the longitude and latitude and had to be searched manually. One challenge for replicatability will be that as the police API updates to recent crimes within a months timeframe, my data on economic metrics will have to manually updated.</p>
+    <p>The <a href="https://data.police.uk/docs/">UK Police API</a>  provided a catalogue of crime by area. Searching for cities required the longitude and latitude and had to be searched manually. One challenge for replicatability will be that as the police API updates to recent crimes within a months timeframe, my data on economic metrics will have to manually updated. Sources for economic metrics <a href="https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/datasets/placeofresidencebylocalauthorityashetable8">Pay</a>, <a href="https://www.ons.gov.uk/employmentandlabourmarket/peoplenotinwork/unemployment/datasets/modelledunemploymentforlocalandunitaryauthoritiesm01/current">Unemployment</a>, <a href="https://www.statista.com/statistics/877540/leading-police-forces-by-officer-numbers-in-the-uk/">Police</a>.</p>
+
+    <p>All CSV files used in charts can be found on my <a href="https://github.com/JosephOReilly21/JosephOReilly21.github.io">Github</a></p>
 
     <p class="heading">Conclusion</p>
     <p>To conclude, my visualisations have presented support for Becker's theory on crime at the aggregate level. I acknowledge that exploring the drivers of crime rigourously, requires careful econometric design. There are many alternate variables which can drive criminal activity.
-         Many drivers lie outside the field of economics entirely, requiring further invesitgation. </p>
+         Many drivers lie outside the field of economics entirely, requiring further investigation. </p>
 
     <footer></footer>
 

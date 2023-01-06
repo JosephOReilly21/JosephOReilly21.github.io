@@ -3,7 +3,8 @@
   
       "title": {
         "text": "Median HH Income Vs Crime by State",
-        "subtitle":["Scatter of Crime Rate (y) per 100,000 people against Average Income (x) , size represents State Population"],
+        "subtitle":["Scatter of Crime Rate per 100,000 people against Average Income",
+         "Size represents State Population, Source: FBI, FRED"],
         "subtitleFontStyle":"italic",
         "subtitleFontSize":10,
         "anchor": "start",
@@ -11,7 +12,7 @@
       },
   
       "height":350,
-      "width":350,
+      "width":300,
   
     "config": {
       "background":"white",

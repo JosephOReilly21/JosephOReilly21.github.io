@@ -3,7 +3,8 @@
   
       "title": {
         "text": "Unemployment Vs Crime by State",
-        "subtitle":["Scatter of Crime Rate per 100,000 people vs Unemployment Rate (x), size represents State Population"],
+        "subtitle":["Scatter of Crime Rate per 100,000 people vs Unemployment Rate", 
+        "size represents State Population, Source: FBI, BLS"],
         "subtitleFontStyle":"italic",
         "subtitleFontSize":10,
         "anchor": "start",
@@ -11,7 +12,7 @@
       },
   
       "height":350,
-      "width":350,
+      "width":270,
   
     "config": {
       "background":"white",

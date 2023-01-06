@@ -1,8 +1,8 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   
-    "width" : 500,
-    "height": 500,
+    "width" : 320,
+    "height": 320,
 
     "title": {
         "text": "Crime and Offenses in Scotland 2020-21",
