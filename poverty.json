@@ -3,7 +3,7 @@
   "title": {
     "text": "Poverty Rate agaist Crime Rate by US State",
     "subtitle": [
-      "Scatter of Crime Rate per 100,000 people against Poverty Rate, Bubble size represents State Population"
+      "Scatter of Crime Rate per 100,000 people against Poverty Rate, Bubble size represents State Population", "Source: FBI, US Census Bureau"
     ],
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
