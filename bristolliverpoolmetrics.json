@@ -8,7 +8,7 @@
       "anchor": "middle",
       "color": "black"
     },
-    "description": "Coronavirus cases",
+    "description": "",
     "data": {
       "url": "https://raw.githubusercontent.com/JosephOReilly21/JosephOReilly21.github.io/main/project/BLmetrics.csv",
       "format": {"type": "csv"}
